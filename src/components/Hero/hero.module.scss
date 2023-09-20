@@ -1,0 +1,225 @@
+.hero {
+    width: 355px;
+    margin-inline: auto;
+
+
+    @media (min-width: 1024px) {
+        width: 984px;
+        padding-bottom: 50px;
+    }
+
+    @media (min-width: 1440px) {
+        width: 1400px;
+        padding-bottom: 50px;
+    }
+}
+
+.picker__wrapper {
+    background-image: url('../../images/hero/bg_mobile.jpg');
+    height: 425px;
+    margin-bottom: 47px;
+    -webkit-animation: scale-up-img 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: scale-up-img 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.2s both;
+    
+
+    @media (min-width: 1024px) {
+        display: flex;
+        justify-content: end;
+        height: 487px;
+        background-image: url('../../images/hero/bg_tablet.jpg');
+        margin-bottom: 50px;
+    }
+    
+    @media (min-width: 1440px) {
+        height: 588px;
+        margin-bottom: 75px;
+        background-image: url('../../images/hero/background.png');
+    }
+}
+
+.date__picker {
+    animation: date-picker .4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.7s both;
+
+    @media (max-width: 1023px) {
+        display: none;
+    }
+}
+
+.date__button {
+    width: 305px;
+    padding-inline: 35px;
+    height: 100px;
+    opacity: 0.9;
+    background: rgba(49, 63, 56, 0.48);
+    backdrop-filter: blur(20px);
+    border: none;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 387px;
+    transition: background-color .3s ease-in;
+
+    &:hover, &:focus {
+        background: rgba(47, 60, 54, 0.574);
+    }
+
+    @media (min-width: 1440px) {
+        width: 368px;
+        padding-inline: 45px;
+        height: 125px;
+        margin-top: 0;
+    }
+
+    & p {
+        color: #FFFCF6;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        text-transform: uppercase;
+
+        @media (min-width: 1440px) {
+            font-size: 16px;
+        }
+
+        & span {
+            color: #FCD043;
+            opacity: 0.8;
+            font-size: 22px;
+            letter-spacing: 0.1rem;
+        }
+    }
+
+    & svg {
+        width: 28px;
+        height: 28px;
+        fill: #FCD043;
+    }
+}
+
+.book {
+    width: 120px;
+    height: 120px;
+    background: #FCD043;
+    color: #1B3B36;
+    font-size: 14px;
+    font-family: Helvetica Neue LT Std;
+    border: none;
+    clip-path: polygon(50% 0%, 85% 15%, 100% 50%, 85% 85%, 50% 100%, 15% 85%, 0% 50%, 15% 15%);
+    margin-left: 215px;
+    margin-top: 285px;
+    animation: date-picker .4s cubic-bezier(0.390, 0.575, 0.565, 1.000) 1.7s both;
+    transition: all 0.3s ease-in-out;
+
+    &:hover, &:focus {
+        background-color: #f8c82b;
+        border-color: transparent;
+        transform: scale(1.05);
+    }
+
+
+    @media (min-width:1024px) {
+        clip-path: none;
+        width: 248px;
+        height: 100px;
+        background-color: #FCD043;
+        color: #1B3B36;
+        font-weight: 500;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin-top: 387px;
+        margin-left: 0;
+    }
+
+    @media (min-width:1440px) {
+        width: 370px;
+        height: 125px;
+        font-size: 18px;
+        margin: 0;
+    }
+}
+
+.contacts {
+    @media (min-width:1024px) {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__number, &__location, &__place {
+        display: none;
+
+        @media (min-width:1024px) {
+            display: block;
+            font-size: 18px;
+            text-decoration: none;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            transition: opacity 0.2s ease-in;
+            color: #FFFCF6;
+        }
+
+        @media (min-width:1440px) {
+            font-size: 26px;
+            text-decoration: underline;
+            margin-bottom: 14px;
+        }
+    }
+
+    &__number, &__location {
+
+        &:hover, &:focus {
+            opacity: 0.8;
+        }
+    }
+
+    &__number {
+        color: #FCD043;
+    }
+
+    &__place {
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 117px;
+        font-size: 14px;
+
+        @media (min-width:1024px) {
+            font-size: 16px;
+            text-align: end;
+            width: 175px;
+        }
+    
+        @media (min-width:1440px) {
+            width: 250px;
+            font-size: 26px;
+        }
+    }
+}
+
+
+@keyframes scale-up-img {
+    0% {
+        -webkit-transform: scale(0.5);
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+@keyframes date-picker {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

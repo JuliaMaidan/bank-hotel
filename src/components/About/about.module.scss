@@ -1,0 +1,107 @@
+.about {
+    margin-inline: auto;
+    background-image: url('../../images/about/big.jpg');
+    background-repeat: no-repeat;
+    background-size: 355px 355px;
+    background-position: top 210px center;
+    padding-block: 50px 70px;
+    width: 355px;
+
+    @media (min-width: 1024px) {
+        background-image: url('../../images/about/big.jpg'), url('../../images/about/small.jpg');
+        background-size: 370px 550px, 165px 240px;
+        background-position: left top 80px, right top 90px;
+        width: 984px;
+        padding-block: 150px 200px;
+    }
+
+    @media (min-width: 1440px) {
+        width: 1400px;
+        padding-block: 200px 220px;
+        background-size: 460px 660px, 240px 360px;
+        background-position: left top 100px, right top 80px;
+    }
+
+
+    &__capt  {
+        color: #FCD043;
+        // font-family: Miracle;
+        font-size: 60px;
+        line-height: 60px;
+        text-transform: uppercase;
+        width: 195px;
+        text-align: right;
+        margin-bottom: 445px;
+
+        @media (min-width: 1024px) {
+            font-size: 100px;
+            line-height: 80px;
+            width: 324px;
+            margin-bottom: 120px;
+            margin-left: 188px;
+
+            &_bright {
+                color: #FFFCF6;
+            }
+        }
+        @media (min-width: 1440px) {
+            font-size: 125px;
+            line-height: 105px;
+            width: 400px;
+            margin-left: 400px;
+        }
+        
+    }
+
+    &__text {
+        font-family: Miracle;
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        
+
+        @media (min-width: 1024px) {
+            font-size: 28px;
+            letter-spacing: 0.84px; 
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 1440px) {
+           font-size: 36px;
+            letter-spacing: 1.08px;
+            margin-bottom: 40px;
+        }
+
+        &_box {
+
+            @media (min-width: 1024px) {
+                margin-left: 502px;
+            }
+            
+            @media (min-width: 1440px) {
+                margin-left: 590px;
+            }
+        }
+
+        &_desc {
+            width: 293px;
+            font-family: Helvetica Neue LT Std;
+            font-size: 13px;
+            line-height: 23px;
+            opacity: 0.8;
+            
+            @media (min-width: 1024px) {
+                width: 250px;
+                opacity: 0.64;
+            }
+            
+            @media (min-width: 1440px) {
+                font-size: 18px;
+                line-height: 28px;
+                width: 400px;
+                
+            }
+        }
+    }
+}

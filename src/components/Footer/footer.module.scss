@@ -1,0 +1,201 @@
+.footer { 
+    background-color: #FFFCF6;
+    color: #1B3B36;
+    padding-block: 100px;
+
+    &__box {
+        width: 355px;
+        margin-inline: auto;
+        
+        &::after {
+            @media (max-width:1023px) {
+                content: '©2021 All rights reserved. BankHotel';
+                color: #1B3B36;
+                font-family: Helvetica Neue LT Std;
+                font-size: 14px;
+                line-height: 24px;
+                opacity: 0.8;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        @media (min-width:1024px) {
+            width: 984px;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        @media (min-width:1440px) {
+            width: 1400px;
+        }
+    }
+}
+
+.about {
+    @media (max-width:1023px ) {
+        display: none;
+    }
+
+    &__name {
+ 
+
+        @media (min-width:1024px) {
+            font-family: Helvetica Neue LT Std;
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+    
+        @media (min-width:1440px) {
+            font-size: 26px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__span {
+        color: #FCD043;
+    }
+
+    &__text {
+
+        @media (min-width:1024px) {
+            font-family: Helvetica Neue LT Std;
+            font-size: 13px;
+            line-height: 23px;
+            opacity: 0.8;
+            width: 230px;
+        }
+    
+        @media (min-width:1440px) {
+            font-size: 16px;
+            line-height: 28px;
+            width: 285px;
+        }
+    }
+
+    &__rights {
+        font-family: Helvetica Neue LT Std;
+
+        @media (min-width:1024px) {
+            font-size: 14px;
+            line-height: 24px;
+            opacity: 0.24;
+            margin-top: 50px;
+        }
+    
+        @media (min-width:1440px) {
+            margin-top: 70px;
+        }
+    }
+
+    &__input {
+
+        @media (min-width:1024px) {
+            margin-top: 24px;
+            padding: 15px;
+            border: 1.5px solid #313f3843;
+            backdrop-filter: blur(20px);
+            width: 249px;
+        
+            color: #1B3B36;
+            font-size: 12px;
+            line-height: 20px;
+            opacity: 0.84;
+            background-color: transparent;
+            transition: all .3s ease-in;
+
+            &:hover, &:focus {
+                border: 1.5px solid #f4c732;
+                text-transform: lowercase;
+
+                &::placeholder {
+                    opacity: 0.5;
+                    
+                }
+            }
+        }
+    
+        @media (min-width:1440px) {
+            margin-top: 30px;
+            padding: 20px;
+            width: 285px;
+            font-size: 16px;
+        }
+
+        &::placeholder {
+            color:  #1B3B36;
+            font-size: 12px;
+            line-height: 20px;
+            opacity: 0.64;
+            text-transform: capitalize;
+            transition: all .3s ease-in;
+
+            @media (min-width:1440px) {
+                font-size: 16px;
+            }
+        }
+
+        &_box {
+            position: relative;
+        }
+    }
+
+    &__btn {
+        background-color: transparent;
+        position: absolute;
+        right: 10px;
+        top: 34px;
+        border: none;
+        stroke: #adb4b0;
+        transition: all .3s ease-in;
+        
+        &:hover, &:focus {
+            stroke: #f4c732;
+        }
+
+        @media (min-width:1440px) {
+            right: 10px;
+            top: 44px;
+        }
+    }
+
+    &__svg {
+        stroke: inherit;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media (min-width:1440px) {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    &__item {
+        font-family: Helvetica Neue LT Std;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        text-transform: uppercase;
+
+        @media (min-width:1440px) {
+            font-size: 16px;
+        }
+    }
+
+    &__link {
+        color: #1B3B36;
+        border-bottom: 1px solid transparent;
+        transition: border-bottom .3s ease-in-out;
+
+        &:hover, &:focus {
+            border-bottom: 1.5px solid #FCD043;
+        }
+    }
+}

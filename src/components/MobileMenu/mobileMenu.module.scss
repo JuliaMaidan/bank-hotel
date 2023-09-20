@@ -1,0 +1,72 @@
+.menu {
+    width: 100vw;
+    position: fixed;
+    top: 84px;
+    left: 0;
+    background-color: #313F38;
+    z-index: 100;
+    height: 100%;
+    padding-block: 30px;
+
+    &__box {
+        width: 355px;
+        margin-inline: auto;
+    }
+
+    &__address {
+        text-align: center;
+        font-family: Helvetica Neue LT Std;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+        color: #FFFCF6;
+        display: block;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: #ffd943;
+        }
+
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    &__link {
+        color:  #FFFCF6;
+        font-family: Helvetica Neue LT Std;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+        text-transform: uppercase;
+        padding-bottom: 4px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.154);
+        transition: border-bottom 0.3s ease-in-out;
+
+        &:hover {
+            border-bottom: 1px solid #e3ad42d0;
+        }
+    }
+
+    &__phone {
+        display: block;
+        font-family: Helvetica Neue LT Std;
+        font-size: 18px;
+        line-height: 18px;
+        padding-bottom: 4px;
+        border-bottom: 1px solid #fffcf61e;
+        width: 140px;
+        margin-bottom: 40px;
+        margin-inline: auto;
+        color: #FFFCF6;
+        transition: border-bottom 0.3s ease-in-out;
+
+
+        &:hover {
+            border-bottom: 1px solid #e3ad42d0;
+        }
+    }
+}

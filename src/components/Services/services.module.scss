@@ -1,0 +1,315 @@
+.services {
+    width: 355px;
+    margin-inline: auto;
+    
+    @media (min-width:1024px) {
+        width: 984px;
+    }
+
+    @media (min-width:1440px) {
+        width: 1400px;
+    }
+
+    &__item {
+        position: relative;
+        
+        &_box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-block: 20px;
+            border-bottom: 1px solid #313f3834;
+
+            @media (min-width:1024px) {
+                flex-direction: row;
+                padding-block: 30px;
+            }
+        
+            @media (min-width:1440px) {
+                padding-block: 50px;
+            }
+
+            &:first-child {
+                border-top: 1px solid #313f3834;
+            }
+        }
+        
+        &_img{
+            width: 150px;
+            margin-bottom: 40px;
+
+            @media (min-width:1024px) {
+                width: 180px;
+                margin-right: 70px;
+                margin-bottom: 0;
+            }
+        
+            @media (min-width:1440px) {
+                width: 228px;
+                margin-right: 132px;
+            }
+        }
+
+        &_number {
+            font-family: Miracle;
+            font-size: 30px;
+            position: absolute;
+            background-color: #eaf0ecdf;
+            border-radius: 50px;
+            padding: 8px 10px;
+            right: 72px;
+            top: 134px;
+
+            @media (min-width:1024px) {
+                position:static;
+                background-color: transparent;
+                font-size: 36px;
+                margin-right: 80px;
+                padding: 0;
+            }
+        
+            @media (min-width:1440px) {
+                font-size: 50px;
+                margin-right: 100px;
+            }
+        }
+
+        &_name {
+            font-family: Miracle;
+            font-size: 24px;
+            line-height: 20px;
+            text-transform: capitalize;
+
+            @media (min-width:1024px) {
+                font-size: 36px;
+                letter-spacing: 1.08px;
+                line-height: normal;
+            }
+        
+            @media (min-width:1440px) {
+                font-size: 50px;
+                letter-spacing: 1.5px;
+            }
+        }
+
+        &_btn {
+            border: none;
+            background-color: transparent;
+            stroke: #313F38;
+            opacity: 0.8;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            transition: all 0.3s ease-in;
+
+            @media (min-width:1024px) {
+                margin-left: auto;
+                position: static;
+            }
+
+            &:hover, &:focus {
+                opacity: 0.6;
+                transform: scale(1.05);
+            }
+        }
+
+        &_svg {
+            stroke: inherit;
+            width: 28px;
+            height: 28px;
+
+            @media (min-width:1024px) {
+                width: 48px;
+                height: 48px;
+            }
+        
+            @media (min-width:1440px) {
+                width: 58px;
+                height: 58px;
+            }
+        }
+    }
+
+    &__fullsize {
+        display: flex;
+        padding-block: 50px;
+        border-bottom: 1px solid #313f3834;
+
+        @media (min-width:1024px) {
+            padding-block: 30px;
+        }
+    
+        @media (min-width:1440px) {
+            padding-block: 50px;
+        }
+
+        &_btn {
+            width: 70px;
+            height: 70px;
+            border: none;
+            background-color: #e6e9e87a;
+            clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+            position: relative;
+            margin-right: 64px;
+            stroke: #313f38dc;
+            margin-top: 80px;
+            transition: all 0.3s ease-in;
+
+            @media (min-width:1024px) {
+                width: 105px;
+                height: 105px;
+                margin-right: 146px;
+                margin-top: 0;
+            }
+        
+            @media (min-width:1440px) {
+                width: 170px;
+                height: 170px;
+                margin-right: 148px;
+            }
+            
+            &:hover,
+            &:focus {
+                background-color: #dedfde7a;
+                transform: scale(1.05);
+            }
+        }
+
+        &_svg {
+            stroke: inherit;
+            width: 20px;
+            height: 20px;
+
+            @media (min-width: 1024px) {
+                width: 28px;
+                height: 28px;
+            }
+        
+            @media (min-width: 1440px) {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        &_number {
+            font-family: Miracle;
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 200px;
+            position: absolute;
+            left: 0;
+            top: 50px;
+
+            @media (min-width: 1024px) {
+                position: static;
+                font-size: 36px;
+                margin-bottom: 120px;
+                margin-top: 40px;
+            }
+        
+            @media (min-width: 1440px) {
+                font-size: 50px;
+                margin-bottom: 160px;
+                margin-top: 60px;
+            }
+
+        }
+
+        &_name {
+            font-family: Miracle;
+            font-size: 30px;
+            letter-spacing: 1.5px;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            width: 180px;
+
+            @media (min-width: 1024px) {
+                font-size: 36px;
+                letter-spacing: 1.08px;
+                margin-bottom: 30px;
+                width: auto;
+            }
+        
+            @media (min-width: 1440px) {
+                font-size: 50px;
+                letter-spacing: 1.5px;
+                margin-bottom: 40px;
+            }
+        }
+
+        &_text {
+            font-family: Helvetica Neue LT Std;
+            font-size: 13px;
+            line-height: 23px;
+            opacity: 0.8;
+            width: 223px;
+                
+            @media (min-width: 1024px) {
+                width: 250px;
+                font-size: 13px;
+                line-height: 23px;
+            }
+        
+            @media (min-width: 1440px) {
+                width: 335px;
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+        &_img {
+            display: none;
+
+            @media (min-width: 1024px) {
+                height: 504px;
+                width: 356px;
+                margin-left: auto;
+                display: block;
+            }
+        
+            @media (min-width: 1440px) {
+                height: 630px;
+                width: 420px;
+            }
+        }
+    }
+
+}
+@keyframes heartbeat {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transform-origin: center center;
+        transform-origin: center center;
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    10% {
+        -webkit-transform: scale(0.91);
+        transform: scale(0.91);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    17% {
+        -webkit-transform: scale(0.98);
+        transform: scale(0.98);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    33% {
+        -webkit-transform: scale(0.87);
+        transform: scale(0.87);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    45% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}

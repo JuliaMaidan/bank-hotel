@@ -1,0 +1,134 @@
+.contacts {
+    background-color: #FFFCF6;
+    color: #1B3B36;
+    padding-top: 100px;
+    position: relative;
+
+    @media (min-width:1024px) {
+        padding-top: 150px;
+    }
+
+    @media (min-width:1440px) {
+        // padding-top: 150px;
+    }
+    
+
+    &__box {
+        width: 355px;
+        margin-inline: auto;
+        padding-bottom: 100px;
+        border-bottom: 1px solid #313f3834;
+        position: relative;
+
+        @media (min-width:1024px) {
+            width: 984px;
+            padding-bottom: 150px;
+        }
+    
+        @media (min-width:1440px) {
+            width: 1400px;
+            // padding-bottom: 150px;
+        }
+    }
+
+    &__phone {
+        font-family: Helvetica Neue LT Std;
+        font-size: 20px;
+        line-height: 20px;
+        border-bottom: 1px solid #313f384f;
+        display: inline;
+        margin-bottom: 70px;
+        color: #1B3B36;
+        transition: all 0.3s ease-in-out;
+        
+        &:hover, &:focus {
+            opacity: 0.9;
+            border-bottom: 1px solid #FCD043;
+        }
+
+        @media (min-width:1024px) {
+            font-size: 38px;
+            margin-bottom: 52px;
+        }
+    
+        @media (min-width:1440px) {
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 80px;
+        }
+    }
+
+    &__address {
+        font-family: Helvetica Neue LT Std;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-left: 183px;
+        margin-bottom: 100px;
+        color: #1B3B36;
+        display: block;
+        border-bottom: 1px solid transparent;
+
+        transition: all 0.3s ease-in-out;
+        
+        &:hover, &:focus {
+            color: #f9cc37;
+        }
+
+        @media (min-width:1024px) {
+            width: 200px;
+            margin-left: 628px;
+        }
+    
+        @media (min-width:1440px) {
+            margin-left: 947px;
+            margin-bottom: 100px;
+        }
+    }
+
+    &__get , &__touch{
+        font-family: Miracle;
+        font-size: 84px;
+        line-height: 84px;
+        text-transform: uppercase;
+
+        @media (min-width:1024px) {
+            font-size: 150px;
+            line-height: 150px;
+        }
+    
+        @media (min-width:1440px) {
+            font-size: 250px;
+            line-height: 250px;
+        }
+    }
+
+    &__svg {
+        width: 36px;
+        height: 36px;
+        fill: #FCD043;
+        position: absolute;
+        top: 184px;
+        left: 280px;
+
+        @media (min-width:1024px) {
+            width: 70px;
+            height: 70px;
+            top: 210px;
+            left: 500px;
+        }
+    
+        @media (min-width:1440px) {
+            width: 100px;
+            height: 100px;
+            top: 270px;
+            left: 830px;
+        }
+    }
+
+    &__touch {
+        color: #FCD043;
+        text-align: right;
+    }
+}
+
+

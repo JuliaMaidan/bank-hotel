@@ -1,0 +1,155 @@
+.facilities {
+    background-color: #FFFCF6;
+    color: #1B3B36;
+    padding-block: 70px;
+
+    @media (min-width:1024px) {
+        padding-top: 100px;
+        padding-bottom: 150px;
+    }
+
+    @media (min-width:1440px) {
+        padding-top: 150px;
+        padding-bottom: 200px;
+    }
+
+    &__wrapper {
+        width: 355px;
+        margin-inline: auto;
+        display: flex;
+        
+        background-image: url('../../images/facilities/kitchen.png');
+        background-repeat: no-repeat;
+        background-size: 192px 124px;
+        background-position: top 230px center;
+        
+        flex-direction: row-reverse;
+
+        @media (min-width:1024px) {
+            width: 984px;
+            display: flex;
+            gap: 2px;
+            background-size: 231px 149px;
+            background-position: top 190px left;
+        }
+    
+        @media (min-width:1440px) {
+            flex-direction: row;
+            width: 1400px;
+            gap: 206px;
+            background-image: url('../../images/facilities/kitchen.png'), url('../../images/facilities/bartender.png');
+            background-size: 335px 216px;
+            background-position: top 415px left, top 90px right;
+        }
+    }
+
+    &__name {
+        width: 122px;
+        font-size: 16px;
+        text-transform: capitalize;
+        text-align: right;
+        position: absolute;
+
+        @media (min-width:1024px) {
+            position: relative;
+            width: 200px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+    
+        @media (min-width:1440px) {
+            text-align: left;
+            width: 251px;
+            font-size: 26px;
+        }
+    }
+}
+
+.caption {
+    width: 263px;
+    position: relative;
+
+    @media (min-width:1024px) {
+        width: 438px;
+    }
+
+    @media (min-width:1440px) {
+        width: 547px;
+    }
+
+    &__our, &__faci, &__lities {
+        font-family: Miracle;
+        text-transform: uppercase;
+        font-size: 60px;
+        line-height: 60px;
+
+        @media (min-width:1024px) {
+            font-size: 100px;
+            line-height: 80px;
+        }
+    
+        @media (min-width:1440px) {
+            font-size: 125px;
+            line-height: 105px;
+        }
+    
+    }
+
+    &__lities{
+        text-align: right;
+        margin-bottom: 225px;
+
+        @media (min-width:1024px) {
+            margin-bottom: 100px;
+        }
+    
+        @media (min-width:1440px) {
+            margin-bottom: 164px;
+        }
+    }
+
+    &__svg {
+        fill: var(--Secondary-color, #FCD043);
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 130px;
+        left: 28px;
+
+        @media (min-width:1024px) {
+            width: 50px;
+            height: 50px;
+            top: 176px;
+            left: 72px;
+        }
+    
+        @media (min-width:1440px) {
+            width: 70px;
+            height: 70px;
+            top: 228px;
+            left: 89px;
+        }
+    }
+
+    &__desc {
+        width: 220px;
+        font-family: Helvetica Neue LT Std;
+        font-size: 13px;
+        line-height: 23px;
+        margin-bottom: 100px;
+        margin-left: auto;
+
+        @media (min-width:1024px) {
+            width: 250px;
+            margin-left: 0;
+        }
+    
+        @media (min-width:1440px) {
+            width: 350px;
+            font-size: 18px;
+            line-height: 28px;
+            margin-bottom: 150px;
+        }
+    }
+}
+
