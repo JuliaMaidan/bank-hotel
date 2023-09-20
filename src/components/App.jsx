@@ -9,11 +9,10 @@ import Facilities from "./Facilities/Facilities";
 import Best from "./Best/Best";
 import GetInTouch from "./GetInTouch/GetInTouch";
 import Footer from "./Footer/Footer";
-import Link from "./Link/Link";
 
 const App = () => {
   return (
-    <div className="app">
+    <div className={styles}>
       <Header />
       <main>
         <Caption data-aos="fade-up" />
@@ -22,7 +21,6 @@ const App = () => {
         <Rooms data-aos="fade-up" />
         <Facilities data-aos="fade-up" />
         <Best data-aos="fade-up" />
-        {/* <Link /> */}
         <GetInTouch />
         <Footer />
       </main>
