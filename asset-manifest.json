@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/bank-hotel/static/css/main.86ee52cf.css",
+    "main.js": "/bank-hotel/static/js/main.0c348e00.js",
+    "static/media/restaurant_small.jpg": "/bank-hotel/static/media/restaurant_small.53392e61798d77110771.jpg",
+    "static/media/conference.jpg": "/bank-hotel/static/media/conference.80498fec430fc8d512f6.jpg",
+    "static/media/restaurant.jpg": "/bank-hotel/static/media/restaurant.2cb8dc43a2e42d545e98.jpg",
+    "static/media/bar.jpg": "/bank-hotel/static/media/bar.8f83423be1e21f12bde7.jpg",
+    "static/media/background.jpg": "/bank-hotel/static/media/background.213222ac4d7e0c228ea0.jpg",
+    "static/media/conference_small.jpg": "/bank-hotel/static/media/conference_small.a2bcb68d41fcc979de50.jpg",
+    "static/media/background.png": "/bank-hotel/static/media/background.516439cc47634da8643c.png",
+    "static/media/bg__mobile.jpg": "/bank-hotel/static/media/bg__mobile.fc77cf62986930ea6204.jpg",
+    "static/media/bg_tablet.jpg": "/bank-hotel/static/media/bg_tablet.059aee3ae15cbe330b44.jpg",
+    "static/media/big.jpg": "/bank-hotel/static/media/big.5d618ac568e9ad7bfde6.jpg",
+    "static/media/bar_small.jpg": "/bank-hotel/static/media/bar_small.6e85cdcb1ee2fb0c538c.jpg",
+    "static/media/bartender.png": "/bank-hotel/static/media/bartender.1551f6ce71a03bb34f7d.png",
+    "static/media/kitchen.png": "/bank-hotel/static/media/kitchen.54c16839777f86973b92.png",
+    "static/media/bg_mobile.jpg": "/bank-hotel/static/media/bg_mobile.5312d052af895b72f8c3.jpg",
+    "static/media/small.jpg": "/bank-hotel/static/media/small.6246d7dff87ddc30308e.jpg",
+    "index.html": "/bank-hotel/index.html",
+    "main.86ee52cf.css.map": "/bank-hotel/static/css/main.86ee52cf.css.map",
+    "main.0c348e00.js.map": "/bank-hotel/static/js/main.0c348e00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86ee52cf.css",
+    "static/js/main.0c348e00.js"
+  ]
+}
