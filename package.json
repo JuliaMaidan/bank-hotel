@@ -2,6 +2,7 @@
   "name": "bank-hotel",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://JuliaMaidan.github.io/bank-hotel/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -15,7 +16,6 @@
     "react-icons": "^4.10.1",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
-    "react-spring": "^9.7.2",
     "sass": "^1.66.1",
     "web-vitals": "^2.1.4"
   },
